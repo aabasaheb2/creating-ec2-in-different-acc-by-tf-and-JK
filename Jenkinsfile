@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git ''
+        git 'https://github.com/aabasaheb2/creating-ec2-in-different-acc-by-tf-and-JK.git'
       }
     }
 

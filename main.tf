@@ -1,8 +1,9 @@
-resource "aws_instance" "ec2_account1" {
-  provider = aws.account1
-  ami           = "ami-02c7683e4ca3ebf58" # ubantu AMI
-  instance_type = "t2.micro"
+resource "aws_instance" "ec2_a" {
+  provider      = aws.account_a
+  ami           = var.ami_id
+  instance_type = var.instance_type
+
   tags = {
-    Name = "aj-vgs-ec2-account1"
+    Name = "ec2-instance-account-a"
   }
 }

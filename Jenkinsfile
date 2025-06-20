@@ -10,10 +10,9 @@ pipeline {
   stages {
     stage('Terraform Init and Apply - Account A') {
       steps {
-          sh 'terraform init'
-          sh 'terraform apply -auto-approve'
-        }
+        sh 'terraform init'
+        sh 'terraform apply -auto-approve'
       }
     }
-
-   
+  }
+}
